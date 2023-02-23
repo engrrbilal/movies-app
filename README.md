@@ -9,7 +9,7 @@
 
 ### Quick Start
 - Make sure that you have node.js and yarn installed.
-- Clone this repo using `git clone https://github.com/`.
+- Clone this repo using `git clone https://github.com/engrrbilal/movies-app`.
 - Create `.env` file according to [.env.template](./.env.template).
 - Install all dependencies using `yarn install`.
 
