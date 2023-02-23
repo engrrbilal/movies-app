@@ -35,3 +35,6 @@ Following table shows list of tools used in this project.
 | Jest + React-Testing + Cypress | Unit testing               |  5.16.2 + 12.1.2 + 9.4.1        |
 | Sentry            | Error tracking with stacktraces         |      6.17.8       |
 | Husky             | Pre-Commit and Pre-Push hooks           |      7.0.4        |
+
+## Demo
+-file:///home/engrbilal/Desktop/projects/assment-demo.webm
