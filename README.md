@@ -13,6 +13,8 @@
 - Create `.env` file according to [.env.template](./.env.template).
 - Install all dependencies using `yarn install`.
 
+## Demo Video
+ https://drive.google.com/file/d/1sQ9COpV9CkMZtbTHUFflo6vYwhCPs-em/view?usp=sharing
 ### Development Build
 - `yarn`
 - `yarn start`
@@ -36,5 +38,3 @@ Following table shows list of tools used in this project.
 | Sentry            | Error tracking with stacktraces         |      6.17.8       |
 | Husky             | Pre-Commit and Pre-Push hooks           |      7.0.4        |
 
-## Demo
--file:///home/engrbilal/Desktop/projects/assment-demo.webm
