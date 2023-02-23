@@ -1,0 +1,19 @@
+{
+  "welcome":"Welcome",
+  "subTitle":"Millions of movies, TV shows and people to discover. Explore now.",
+  "notFound": "Not Found",
+  "goBack":"Back to home",
+  "navbar":{
+    "title": "Carma Movies App",
+    "movies": "Movies",
+    "charts": "Charts",
+    "about": "About"
+  },
+  "movie":{
+   "searchPlaceholder": "search for a moview, tv, show, person ...",
+   "search":"Search",
+   "noListData":"There are no movies that matched your query.",
+   "overview":"Overview",
+   "orginalLanguage":"Orginal Language"
+  }
+}

@@ -1,0 +1,210 @@
+/* search box style */
+.search-box{
+    margin-left: 2rem;
+    width: 100%;
+}
+.input-search-button{
+    position: relative;
+    right: 76px
+} 
+/* movies list style */
+.movies-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0px;
+}
+.movies-list {
+    margin: 0.5rem;
+}
+.movie-list-card{
+    height: 24rem;
+    cursor: pointer;
+    background: rgba(214, 165, 205, 0.21);
+    border-radius: 6px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border: 1px solid rgba(214, 165, 205, 0.3);
+}
+.card-img-top{
+    height: 75%;
+    width: 100%;
+    min-width: 8rem;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+.card-body-box {
+    padding: 1.25rem 0.25rem;
+    h5{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* number of lines to show */
+                line-clamp: 2; 
+        -webkit-box-orient: vertical;
+        font-size: $font-size-large;
+        font-weight: 700;
+        color: $dark;
+    }
+    .date {
+        font-size: $font-size-large;
+        color: $secondary;
+    }
+}
+/* Category select */
+.media-cat-container{
+    display: flex;
+    justify-content: flex-start;
+    width: 14rem;
+    margin: 1rem;
+    .button-chip-container{
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid $dark;
+      padding: 0px;
+      .chip-button{
+          border: 0px;
+          border-radius: 50px !important;
+          color: $light;
+      }
+      .chip-button-active{
+        background: $dark;
+      }
+      .chip-button-outline{
+        background: transparent;
+        color: $dark;
+      }
+    }
+}
+
+/* Circular progress */
+  .single-chart {
+    width: 2.5rem;
+    position: absolute;
+    justify-content: space-around ;
+  }
+  
+  .circular-chart {
+    display: block;
+    background: $dark;
+    border-radius: 100px;
+    margin: 5px auto;
+  }
+  
+  .circle-bg {
+    fill: none;
+    stroke: $light-dark;
+    stroke-width: 3.8;
+  }
+  
+  .circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+  }
+  
+  @keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+  }
+  
+  .circular-chart.green .circle {
+    stroke: $light-green;
+  }
+
+  .circle-percentage {
+    fill: $light;
+    font-weight: 700;
+    font-size: $font-size-small;
+    text-anchor: middle;
+  }
+.rating-container {
+    position: relative;
+    bottom: 2rem;
+    left: 1rem
+}
+/* movie detail components style */
+.movie-details-container{
+
+    border-bottom: 1px solid var(--primaryColor);
+    background-position: left calc((50vw - 170px) - 340px) top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    scrollbar-width: none;  
+    .movie-details{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: linear-gradient(to right, rgba(31.5, 31.5, 10.5, 1) calc((50vw - 170px) - 340px), rgba(31.5, 31.5, 10.5, 0.84) 30%, rgba(31.5, 31.5, 10.5, 0.84) 100%);
+        width: 100%;
+        height: 90vh;
+
+        .movie-details-poster{
+            height: 90%;
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+        }
+        .movie-details-body-container{
+          padding: 2rem;
+          height: 90%;
+          height: 100%;
+          border-radius: 6px;
+        }
+    }
+    h2,h5 {
+        color: $light;
+        font-weight: 700;
+    }
+    p {
+        color: $light;
+        font-size: $font-size-large;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        line-clamp: 5; 
+    }
+
+    @media only screen and (max-width: 400px) {
+        .movie-details{
+          flex-direction: column;
+          height: 100%;
+          width: 100%;
+        }
+        .movie-details-poster{
+            height: 100%;
+            width: 100%;
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+        }
+    }
+    .movie-subheader{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+}
+/* skeleton */
+  .shimmer {
+    animation: shimmer 1s infinite;
+    background: linear-gradient(-90deg, #fdf0f0, #b6a3a3, #947272);
+    background-size: 400% 100%;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: 0 0;
+    }
+  
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  

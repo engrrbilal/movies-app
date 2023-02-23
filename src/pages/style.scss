@@ -1,0 +1,63 @@
+.welcome-container {
+    background: $light-blue;
+    background-image: url('https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,00192f,00baff)/zqkmTXzjkAgXmEWLRsY4UpTWCeo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    .welcome-text-box {
+        margin-left: 3rem;
+        .wlecome-text {
+            color: $light;
+            font-weight: 700;
+            font-size: $font-size-xxl;
+        } 
+        .welecome-subtext {
+            color: $light;
+            font-weight: 700;
+            font-size: $font-size-xl;
+        }
+       
+    }
+}
+.dashboard-body-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    .movies-list-layout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0px;
+    }
+}
+.charts-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+}
+
+@media only screen and (max-width: 812px) {
+    .welcome-container {
+        padding: 1rem;
+        .welcome-text-box {
+            .wlecome-text {
+                font-size: $font-size-xl;
+            } 
+            .welecome-subtext {
+                color: $light;
+                font-weight: 700;
+                font-size: $font-size-large;
+            }
+        
+        }
+    }
+    .charts-container{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,34 @@
+image: node:14.17
+
+cache:
+  paths:
+    - node_modules
+
+stages:
+  - init
+  - compile
+  - lint
+  - test
+
+INIT:
+  stage: init
+  script:
+    - yarn install
+  only:
+    changes:
+      - src/**/*.{js,jsx,ts,tsx}
+COMPILE:
+  stage: compile
+  script:
+    - yarn compile
+  only:
+    changes:
+      - src/**/*.{js,jsx,ts,tsx}
+LINT:
+  stage: lint
+  script:
+    - yarn lint
+TEST:
+  stage: test
+  script:
+    - yarn test

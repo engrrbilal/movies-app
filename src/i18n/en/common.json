@@ -1,0 +1,9 @@
+{
+    "welcome": {
+        "title": "Welcome to {{framework}}",
+        "description": "Lets start building a beautiful application."
+    },
+    "error": {
+        "title": "Something went wrong"
+    }
+}
